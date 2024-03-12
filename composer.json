@@ -1,6 +1,6 @@
 {
     "name": "aimon-islam/lamp-filamentphp-utility",
-    "type": "metapackage",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
