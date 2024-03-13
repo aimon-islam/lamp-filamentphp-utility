@@ -49,7 +49,7 @@ trait InteractsWithEnum
      *
      * @return static|mixed
      */
-    public static function get(string $key, $default = null): mixed
+    public static function get(?string $key, $default = null): mixed
     {
         return static::all()->where('name', $key)->first(default: $default);
     }
@@ -57,7 +57,7 @@ trait InteractsWithEnum
     /**
      * Check if item is exists
      */
-    public static function has(string $key): bool
+    public static function has(?string $key): bool
     {
         return ! empty(static::get($key, null));
     }
@@ -65,7 +65,7 @@ trait InteractsWithEnum
     /**
      * Check if item is exists
      */
-    public static function exists(int|string $value): bool
+    public static function exists(?string $value): bool
     {
         return ! empty(static::all()->where('value', $value)->first());
     }
