@@ -14,11 +14,11 @@ interface Enumerable
 
     public static function assoc(): array;
 
-    public static function get(string $key, $default = null): mixed;
+    public static function get(?string $key, $default = null): mixed;
 
-    public static function has(string $key): bool;
+    public static function has(?string $key): bool;
 
-    public static function exists(string $value): bool;
+    public static function exists(?string $value): bool;
 
     public static function count(): int;
 
